@@ -19,7 +19,7 @@ const { error } = require("console");
 //port
 
 
-let port = 8000;
+let port =process.env.port || 8000 ;
 //app use this dependencies
 app.use(express.json());
 app.use(cookieParser())
